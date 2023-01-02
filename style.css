@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    --darkGreen: #1F8600;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+.initialSection {
+    margin: 25vh 0 0 0;
+}
+
+.item_list {
+    position: fixed;
+    width: 75vw;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    margin: 1vh 0 0 0;
+}
+
+.logo {
+    width: 4vw;
+}
+
+.navlist {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    transition: all ease-in-out 0.2s;
+    cursor:pointer;
+}
+
+.item:hover {
+    box-shadow: 0px 2px 0px 0px var(--darkGreen);
+}
+
+.item:first-of-type {
+    box-shadow: 0px 2px 0px 0px var(--darkGreen);
+
+}
+
+.heroBanner {
+    height: 100vh;
+    width: 100vw;
+    background: url("./img/plante.png");
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    justify-content: center;
+    align-items: center;
+    padding: 15vh 45vw 0 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.landing_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.landing_title img {
+    width: 30vw;
+}
+
+.landing_title p {
+    font-weight: 300;
+    font-size: 1.55rem;
+}
+
+.Call-To-Action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Call-To-Action a p {
+    color: var(--darkGreen);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0 0 1vh 0;
+}
+
+.troisPlants {
+    width: 100%;
+}
+
+.ourSelection {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0 0 15vh 10vw;
+}
+
+.greenHr {
+    border-top: 2px solid var(--darkGreen);
+    width: 50%;
+    margin: 10vh auto 10vh auto;
+}
+
+.plantExamples {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 15vw;
+}
+
+.plants {
+    text-align: center;
+    transition: all ease-in-out 0.15s;
+    opacity: 0.6;
+}
+
+.imgBox {
+    border-radius: 25px;
+    height: 25vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    margin: 0;
+}
+
+.imgInBox {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: saturate(200%);
+    
+}
+
+.plants:hover {
+    opacity: 1;
+}
+
+.plants h2 {
+    margin: 5vh 0 0 0;
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+.plant_Section {
+    width: 80vw;
+    margin: 25vh auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all ease-in-out 0.15;
+    opacity: 1;
+}
+
+.plantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plantInfo h1 {
+    font-size: 3rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    
+}
+
+.plantInfo p {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    width: 40vw;
+}
+
+.plantInfo button {
+    width: 40vw;
+    height: 8vh;
+    background-color: var(--darkGreen);
+    color: white;
+    border: none;
+    border-radius: 0 2vw 2vw 0;
+    transform: translateX(-50%);
+    font-size: 1.7rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: right;
+    padding: 0 5vw 0 0;
+    cursor:pointer;
+}
+.leftPlant button{
+    border-radius: 2vw 0 0 2vw;
+    transform: translateX(50%);
+    text-align: left;
+    padding: 0 0 0 5vw;
+    cursor:pointer;
+}
+
+.plantImg{
+    width:25vw;
+    height:55vh;
+    border-radius: 4vw;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+
+
+
+/* CONTACT */
+
+.contact{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-bottom: 15vh;
+}
+
+.contact h1{
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "name name . ."
+    "mail mail mail mail"
+    "message message message message"
+    "message message message message"
+    "message message message message"
+    ". . . send"
+    ;
+    gap: 2vw;
+    width: 60vw;
+    margin: auto;
+    height: 50vh;
+}
+
+.form{
+    border-radius: 2vw;
+    border: 1px solid black;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 1.5rem;
+}
+
+.form h2{
+    background-color: #f8f8f8;
+    margin: 0 0 0 3vw;
+    transform: translateY(-50%);
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color:#1F8600;
+    width: fit-content;
+    padding: 0.5vw;
+}
+
+.fullName{
+    grid-area: name;
+}
+
+/* .fullName h2{
+    width: auto;
+} */
+
+.email{
+    grid-area: mail;
+}
+
+.message{
+    grid-area: message;
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: send;
+    background-color: var(--darkGreen);
+    color: white;
+    border: none;
+}
+
+.form div h2{
+    background-color: transparent;
+    color: #f8f8f8;
+    margin: 0;
+    transform: none;
+}
+
+.hide {
+    display: none;
+}
+
+.scale{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+a{
+    color: black;
+}
+
+.container-footer{
+    width: 65vw;
+    height: 30vh;
+    background-color: #1F8600;
+    transform: translateX(60%);
+    border-radius: 2vw;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color:#f8f8f8;
+    margin: 0 0 5vh 0;
+    
+    
+}
+
+.top-items{
+    display: flex;
+    margin-left: 57px;
+    width: 60%;
+    height: 30%;
+    justify-content: space-around;
+    flex-direction: end;
+    gap: 100px;
+
+}
+
+.top-item{
+    
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 450;
+    margin: 4vh 0 0 0;
+}
+.mid-items{
+    display: flex;
+    /*
+    border: red solid 1px;
+    width: 20%;
+    height: 40%;
+    justify-content: space-evenly;
+    flex-direction: end; */
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.mid-item{
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 1rem;
+    
+}
+.mid {
+    display: flex;
+    margin-left: 130px;
+    width: 60%;
+    height: 30%;
+    justify-content: space-around;
+    flex-direction: end;
+    gap: 100px;
+    /* width: 60%;
+    margin-left: 120px;
+    border: blue solid 1px;
+    display: flex;
+    justify-content: space-around; */
+}
+
+.bot-items {
+
+    display: flex;
+    margin-left: 230px;
+    width: 60%;
+    height: 30%;
+    justify-content: space-around;
+    flex-direction: end;
+    gap: 100px;
+
+}
+
+.bot-item {
+
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 450;
+    margin: 2vh 0 0 0;
+}
+
+#footerlogo {
+    height: 10rem;
+    width:  10rem;
+    position: relative;
+    bottom: 21rem;
+    left: 15rem;
+}
+
+.imgInBox2 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
